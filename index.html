@@ -6,29 +6,33 @@
 <title>Vivid Horizons Sri Lanka — Handmade Pencil Portraits &amp; Custom Art</title>
 <meta name="description" content="Custom hand-drawn pencil portraits, canvas paintings, digital art and wall art from Sri Lanka. Send any photo on WhatsApp — island-wide delivery. A4 portraits from Rs. 3,500.">
 <meta name="theme-color" content="#0F3A5C">
-<link rel="icon" href="assets/favicon.png" type="image/png">
+<link rel="icon" href="assets/emblem.svg" type="image/svg+xml">
+<link rel="alternate icon" href="assets/favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="assets/emblem.png">
-<link rel="canonical" href="https://miyurukariyawasam.github.io/vivid-horizons-srilanka/">
+<link rel="canonical" href="https://vividhorizonssl.github.io/vivid-horizons-srilanka/">
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="Vivid Horizons Sri Lanka — Handmade Pencil Portraits &amp; Custom Art">
 <meta property="og:description" content="Custom hand-drawn pencil portraits from any photo. Island-wide delivery across Sri Lanka.">
-<meta property="og:url" content="https://miyurukariyawasam.github.io/vivid-horizons-srilanka/">
-<meta property="og:image" content="https://miyurukariyawasam.github.io/vivid-horizons-srilanka/assets/banner.jpg">
+<meta property="og:url" content="https://vividhorizonssl.github.io/vivid-horizons-srilanka/">
+<meta property="og:image" content="https://vividhorizonssl.github.io/vivid-horizons-srilanka/assets/banner.jpg">
 <meta name="twitter:card" content="summary_large_image">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Noto+Sans+Sinhala:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Noto+Sans+Sinhala:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
 
+<div class="progress" aria-hidden="true"><i id="progressBar"></i></div>
+<div class="grain" aria-hidden="true"></div>
+
 <header class="site-header" id="siteHeader">
   <div class="wrap header-inner">
     <a class="brand" href="#top" aria-label="Vivid Horizons Sri Lanka — home">
-      <img src="assets/emblem.png" alt="" width="52" height="49" class="brand-mark">
+      <img src="assets/emblem.svg" alt="" width="44" height="44" class="brand-mark">
       <span class="brand-text">
         <strong>Vivid Horizons</strong>
         <em>Sri Lanka</em>
@@ -54,19 +58,20 @@
 
 <!-- ============ HERO ============ -->
 <section class="hero" id="top">
+  <div class="hero-aura" aria-hidden="true"></div>
   <div class="wrap hero-grid">
     <div class="hero-copy reveal">
       <p class="eyebrow">Art &amp; Travel Experiences · Sri Lanka</p>
-      <h1>Your photo, <span class="ink">drawn by hand.</span></h1>
+      <h1 class="mask"><span>Your photo,</span><span class="ink">drawn by hand.</span></h1>
       <p class="lede">Custom pencil portraits, canvas paintings and digital art — made from any photograph you send us. Gift something that lasts longer than a message.</p>
       <p class="lede-si si">ඕනෑම ඡායාරූපයකින් විශේෂිත පෙන්සිල් ආට් එකක් සාදාගත හැක.</p>
 
       <div class="hero-actions">
         <a class="btn btn-primary btn-lg" href="https://wa.me/94769647120?text=Hi%20Vivid%20Horizons%2C%20I%20would%20like%20to%20order%20a%20portrait." target="_blank" rel="noopener">
           <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.87 9.87 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2Zm5.8 14.02c-.24.68-1.42 1.32-1.95 1.37-.52.05-1 .24-3.37-.7-2.84-1.12-4.63-4-4.77-4.19-.14-.19-1.13-1.5-1.13-2.87 0-1.36.71-2.03.97-2.31.25-.28.55-.35.73-.35.18 0 .37 0 .53.01.17.01.4-.06.62.48.24.57.8 1.97.87 2.11.07.14.12.31.02.5-.09.19-.14.31-.28.47-.14.17-.3.37-.42.5-.14.14-.29.29-.12.57.16.28.73 1.2 1.56 1.95 1.07.95 1.98 1.25 2.26 1.39.28.14.44.12.6-.07.17-.19.7-.81.88-1.09.19-.28.37-.23.62-.14.25.09 1.65.78 1.93.92.28.14.47.21.54.33.07.11.07.66-.17 1.33Z"/></svg>
-          WhatsApp 076 964 7120
+          <span>WhatsApp 076 964 7120</span>
         </a>
-        <a class="btn btn-ghost btn-lg" href="#pricing">See prices</a>
+        <a class="btn btn-ghost btn-lg" href="#pricing"><span>See prices</span></a>
       </div>
 
       <ul class="hero-chips">
@@ -74,13 +79,15 @@
         <li>From any photo</li>
         <li>Island-wide delivery</li>
       </ul>
+
+      <p class="hero-cue" aria-hidden="true"><i></i>Scroll</p>
     </div>
 
     <div class="hero-art reveal">
-      <figure class="frame frame-a">
+      <figure class="frame frame-a" data-speed="-0.045">
         <img src="assets/gallery/portrait-single.jpg" alt="Hand-drawn graphite pencil portrait of a woman, framed" width="270" height="410" loading="eager" decoding="async">
       </figure>
-      <figure class="frame frame-b">
+      <figure class="frame frame-b" data-speed="0.075">
         <img src="assets/gallery/canvas-horse.jpg" alt="Acrylic canvas painting of a white horse running through water" width="526" height="682" loading="lazy" decoding="async">
       </figure>
     </div>
@@ -92,11 +99,11 @@
   <div class="wrap">
     <header class="section-head reveal">
       <p class="eyebrow">What we make</p>
-      <h2>Our available services</h2>
+      <h2 class="mask"><span>Our available services</span></h2>
       <p class="section-sub">Every piece is made to order, by hand, for the person you have in mind.</p>
     </header>
 
-    <div class="cards">
+    <div class="cards" data-stagger>
       <article class="card reveal">
         <span class="card-ico" aria-hidden="true">✏️</span>
         <h3>Pencil Arts</h3>
@@ -142,11 +149,11 @@
   <div class="wrap">
     <header class="section-head reveal">
       <p class="eyebrow">Pricing</p>
-      <h2>Pencil portrait prices</h2>
+      <h2 class="mask"><span>Pencil portrait prices</span></h2>
       <p class="section-sub">Straightforward rates, no hidden charges. Island-wide delivery available.</p>
     </header>
 
-    <div class="price-grid">
+    <div class="price-grid" data-stagger>
       <article class="price reveal">
         <p class="price-size">A4</p>
         <h3>Single Portrait</h3>
@@ -179,41 +186,39 @@
   </div>
 </section>
 
-<!-- ============ GALLERY ============ -->
-<section class="section" id="gallery">
+<!-- ============ GALLERY (the dark room) ============ -->
+<section class="section section-dark" id="gallery">
   <div class="wrap">
     <header class="section-head reveal">
       <p class="eyebrow">Gallery</p>
-      <h2>Recent work</h2>
+      <h2 class="mask"><span>Recent work</span></h2>
       <p class="section-sub">A few pieces that went out to customers across the island.</p>
     </header>
 
-    <div class="gallery">
+    <div class="gallery" data-stagger>
       <button class="shot reveal" type="button" data-full="assets/gallery/portrait-single.jpg" data-caption="A4 pencil portrait — drawn from a single photograph">
-        <img src="assets/gallery/portrait-single.jpg" alt="Framed pencil portrait of a smiling woman wearing glasses" width="270" height="410" loading="lazy" decoding="async">
+        <span class="shot-media"><img src="assets/gallery/portrait-single.jpg" alt="Framed pencil portrait of a smiling woman wearing glasses" width="270" height="410" loading="lazy" decoding="async" data-speed="0.03"></span>
         <span class="shot-label">Single portrait</span>
       </button>
-      <button class="shot reveal" type="button" data-full="assets/gallery/portrait-family.jpg" data-caption="A3 family portrait — three generations in one frame">
-        <img src="assets/gallery/portrait-family.jpg" alt="Framed pencil portrait of a family of three, held up by the artist" width="300" height="423" loading="lazy" decoding="async">
-        <span class="shot-label">Family portrait</span>
-      </button>
       <button class="shot reveal" type="button" data-full="assets/gallery/teachers-day.jpg" data-caption="Teachers Day commission — a portrait gift for a beloved teacher">
-        <img src="assets/gallery/teachers-day.jpg" alt="Pencil portrait of a gentleman in a hat and glasses, framed in white" width="490" height="680" loading="lazy" decoding="async">
+        <span class="shot-media"><img src="assets/gallery/teachers-day.jpg" alt="Pencil portrait of a gentleman in a hat and glasses, framed in white" width="490" height="680" loading="lazy" decoding="async" data-speed="0.03"></span>
         <span class="shot-label">Gift commission</span>
       </button>
       <button class="shot reveal" type="button" data-full="assets/gallery/canvas-horse.jpg" data-caption="Acrylic on canvas — a white horse at full gallop">
-        <img src="assets/gallery/canvas-horse.jpg" alt="Painting of a white horse galloping through dark water" width="526" height="682" loading="lazy" decoding="async">
+        <span class="shot-media"><img src="assets/gallery/canvas-horse.jpg" alt="Painting of a white horse galloping through dark water" width="526" height="682" loading="lazy" decoding="async" data-speed="0.045"></span>
         <span class="shot-label">Canvas painting</span>
       </button>
-      <button class="shot reveal" type="button" data-full="assets/gallery/portrait-generations.jpg" data-caption="A3 pencil portrait — three generations, with a Sinhala dedication">
-        <img src="assets/gallery/portrait-generations.jpg" alt="Framed pencil portrait of two boys beside their grandmother, with a Sinhala verse above them" width="677" height="900" loading="lazy" decoding="async">
-        <span class="shot-label">Group portrait</span>
+      <button class="shot reveal" type="button" data-full="assets/gallery/portrait-generations.jpg" data-caption="A3 family portrait — three generations, with a Sinhala dedication">
+        <span class="shot-media"><img src="assets/gallery/portrait-generations.jpg" alt="Framed pencil portrait of two boys beside their grandmother, with a Sinhala verse above them" width="677" height="900" loading="lazy" decoding="async" data-speed="0.03"></span>
+        <span class="shot-label">Family portrait</span>
       </button>
       <button class="shot reveal" type="button" data-full="assets/gallery/canvas-ship.jpg" data-caption="Acrylic on canvas — a tall ship riding a heavy swell">
-        <img src="assets/gallery/canvas-ship.jpg" alt="Acrylic painting of a tall sailing ship crossing rough blue seas" width="900" height="604" loading="lazy" decoding="async">
+        <span class="shot-media"><img src="assets/gallery/canvas-ship.jpg" alt="Acrylic painting of a tall sailing ship crossing rough blue seas" width="900" height="604" loading="lazy" decoding="async" data-speed="0.045"></span>
         <span class="shot-label">Seascape on canvas</span>
       </button>
     </div>
+
+    <p class="gallery-foot reveal">Tap any piece to see it full size.</p>
   </div>
 </section>
 
@@ -222,13 +227,13 @@
   <div class="wrap occasion-grid">
     <div class="occasion-copy reveal">
       <p class="eyebrow">Gifting</p>
-      <h2>A gift they will keep on the wall</h2>
+      <h2 class="mask"><span>A gift they will keep</span><span>on the wall</span></h2>
       <p>Teachers&rsquo; Day, birthdays, weddings, anniversaries, farewells — a hand-drawn portrait says more than anything you can buy off a shelf.</p>
       <p class="si occasion-si">ඔබගේ ආදරණීය ගුරුවරයාට / ගුරුවරියට විශේෂිත පෙන්සිල් ආට් එකක් ලබා දෙන්න.</p>
-      <a class="btn btn-primary" href="https://wa.me/94769647120?text=Hi%21%20I%20would%20like%20a%20portrait%20as%20a%20gift." target="_blank" rel="noopener">Plan a gift on WhatsApp</a>
+      <a class="btn btn-primary" href="https://wa.me/94769647120?text=Hi%21%20I%20would%20like%20a%20portrait%20as%20a%20gift." target="_blank" rel="noopener"><span>Plan a gift on WhatsApp</span></a>
     </div>
     <figure class="occasion-art reveal">
-      <img src="assets/services-poster.jpg" alt="Vivid Horizons Sri Lanka services poster: pencil, canvas, digital, cover and wall arts" width="526" height="526" loading="lazy" decoding="async">
+      <img src="assets/gallery/teachers-day.jpg" alt="Framed pencil portrait of a gentleman in a hat and glasses, drawn as a Teachers Day gift" width="490" height="680" loading="lazy" decoding="async">
     </figure>
   </div>
 </section>
@@ -238,10 +243,10 @@
   <div class="wrap">
     <header class="section-head reveal">
       <p class="eyebrow">How it works</p>
-      <h2>Ordering takes three steps</h2>
+      <h2 class="mask"><span>Ordering takes three steps</span></h2>
     </header>
 
-    <ol class="steps">
+    <ol class="steps" data-stagger>
       <li class="step reveal">
         <span class="step-n">1</span>
         <h3>Send your photo</h3>
@@ -264,11 +269,11 @@
 <!-- ============ CONTACT ============ -->
 <section class="section contact" id="contact">
   <div class="wrap contact-inner reveal">
-    <img src="assets/emblem.png" alt="" width="84" height="79" class="contact-mark">
-    <h2>Let&rsquo;s make something for someone</h2>
+    <img src="assets/emblem.svg" alt="" width="84" height="84" class="contact-mark">
+    <h2 class="mask"><span>Let&rsquo;s make something</span><span>for someone</span></h2>
     <p class="section-sub">Message us any day — we usually reply within a few hours.</p>
 
-    <div class="contact-links">
+    <div class="contact-links" data-stagger>
       <a class="clink clink-wa" href="https://wa.me/94769647120?text=Hi%20Vivid%20Horizons%21" target="_blank" rel="noopener">
         <span class="clink-k">WhatsApp</span>
         <span class="clink-v">076 964 7120</span>
@@ -289,10 +294,14 @@
 
 <footer class="site-footer">
   <div class="wrap footer-inner">
-    <img src="assets/logo.jpg" alt="Vivid Horizons Sri Lanka" width="880" height="728" class="footer-logo" loading="lazy" decoding="async">
+    <div class="footer-lockup">
+      <img src="assets/emblem.svg" alt="Vivid Horizons Sri Lanka" width="62" height="62" class="footer-mark" loading="lazy">
+      <span class="footer-rule" aria-hidden="true"></span>
+    </div>
     <div class="footer-meta">
+      <p class="footer-kicker">Art &amp; Travel Experiences</p>
       <p class="footer-name">Vivid Horizons Sri Lanka</p>
-      <p class="muted">Art &amp; Travel Experiences · Handmade portraits &amp; custom art</p>
+      <p class="muted">Handmade portraits &amp; custom art · Island-wide delivery</p>
       <p class="muted small">&copy; <span id="year">2026</span> Vivid Horizons Sri Lanka. All artwork is original and remains the property of the artist.</p>
     </div>
   </div>
@@ -314,10 +323,10 @@
 {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "url": "https://miyurukariyawasam.github.io/vivid-horizons-srilanka/",
+  "url": "https://vividhorizonssl.github.io/vivid-horizons-srilanka/",
   "name": "Vivid Horizons Sri Lanka",
   "description": "Custom hand-drawn pencil portraits, canvas paintings, digital art and wall art. Island-wide delivery in Sri Lanka.",
-  "image": "https://miyurukariyawasam.github.io/vivid-horizons-srilanka/assets/banner.jpg",
+  "image": "https://vividhorizonssl.github.io/vivid-horizons-srilanka/assets/banner.jpg",
   "telephone": "+94769647120",
   "priceRange": "Rs. 3500 - Rs. 6500",
   "address": { "@type": "PostalAddress", "addressCountry": "LK" },

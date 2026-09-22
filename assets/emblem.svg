@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Vivid Horizons Sri Lanka emblem">
+  <defs>
+    <linearGradient id="vh-sun" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F4BC63"/>
+      <stop offset="1" stop-color="#E87F2C"/>
+    </linearGradient>
+    <linearGradient id="vh-arc" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#14707E"/>
+      <stop offset=".52" stop-color="#C9963F"/>
+      <stop offset="1" stop-color="#E87F2C"/>
+    </linearGradient>
+    <linearGradient id="vh-sea" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#14707E"/>
+      <stop offset="1" stop-color="#1E9FB0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- gold keyline -->
+  <circle cx="32" cy="32" r="30.2" fill="none" stroke="#C9963F" stroke-opacity=".5" stroke-width="1.15"/>
+
+  <!-- horizon arc -->
+  <path d="M13 38a19 19 0 0 1 38 0" fill="none" stroke="url(#vh-arc)" stroke-width="3.1" stroke-linecap="round"/>
+
+  <!-- sun setting into the horizon -->
+  <circle cx="32" cy="38" r="7.6" fill="url(#vh-sun)"/>
+
+  <!-- horizon line -->
+  <path d="M11.5 38h41" stroke="#C9963F" stroke-opacity=".55" stroke-width="1.1" stroke-linecap="round"/>
+
+  <!-- sea -->
+  <path d="M13.5 44.6c3.9-3 7.3-3 11.2 0s7.3 3 11.2 0 7.3-3 11.2 0" fill="none" stroke="url(#vh-sea)" stroke-width="2.7" stroke-linecap="round"/>
+  <path d="M18 51.2c3.1-2.4 5.8-2.4 8.9 0s5.8 2.4 8.9 0 5.8-2.4 8.9 0" fill="none" stroke="#1E9FB0" stroke-opacity=".5" stroke-width="2.1" stroke-linecap="round"/>
+</svg>
