@@ -49,9 +49,14 @@
     });
   });
 
-  if (reduced || !("IntersectionObserver" in window)) {
-    items.forEach(function (el) { el.classList.add("is-in"); });
-  } else {
+  var startReveals = function () {
+    document.documentElement.classList.remove("fonts-pending");
+
+    if (reduced || !("IntersectionObserver" in window)) {
+      items.forEach(function (el) { el.classList.add("is-in"); });
+      return;
+    }
+
     var io = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
         if (!entry.isIntersecting) return;
@@ -61,6 +66,27 @@
     }, { rootMargin: "0px 0px -10% 0px", threshold: 0.12 });
 
     items.forEach(function (el) { io.observe(el); });
+  };
+
+  /* Hold the reveals until the webfonts are in. Otherwise the headings are
+     painted in Georgia, animate, and then re-paint in Fraunces mid-flight —
+     which is the letters flickering. The cap is deliberately short: a blank
+     first screen is worse than a swap, so after 600ms we reveal regardless
+     and let the font land on its own. */
+  if (document.fonts && document.fonts.ready) {
+    document.documentElement.classList.add("fonts-pending");
+    var started = false;
+    var begin = function () {
+      if (started) return;
+      started = true;
+      /* called straight, never through requestAnimationFrame: rAF is throttled
+         in a backgrounded tab, and the page must never be left invisible */
+      startReveals();
+    };
+    document.fonts.ready.then(begin);
+    window.setTimeout(begin, 600);
+  } else {
+    startReveals();
   }
 
   /* ==========================================================================
