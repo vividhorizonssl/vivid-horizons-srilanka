@@ -4,7 +4,7 @@ A single-page static site for **Vivid Horizons Sri Lanka** (Art & Travel Experie
 handmade pencil portraits, canvas paintings, digital art, cover art and wall art,
 with island-wide delivery.
 
-**Live site:** https://vividhorizonssl.github.io./vivid-horizons-srilanka/
+**Live site:** https://vividhorizonssl.github.io/vivid-horizons-srilanka/
 
 ## What's on the page
 
@@ -34,12 +34,12 @@ python -m http.server 8000
 
 ## Editing the common things
 
-| What | Where |
-| --- | --- |
-| Prices | `index.html` → `<!-- PRICING -->` section |
-| Services | `index.html` → `<!-- SERVICES -->` section |
-| Phone number | search for `94769647120` (WhatsApp links use the `94` country code, no leading `0`) |
-| Colours | `css/styles.css` → the `:root` block at the top |
+| What           | Where                                                                                     |
+| -------------- | ----------------------------------------------------------------------------------------- |
+| Prices         | `index.html` → `<!-- PRICING -->` section                                                 |
+| Services       | `index.html` → `<!-- SERVICES -->` section                                                |
+| Phone number   | search for `94769647120` (WhatsApp links use the `94` country code, no leading `0`)       |
+| Colours        | `css/styles.css` → the `:root` block at the top                                           |
 | Gallery images | drop a JPEG in `assets/gallery/`, then copy a `.shot` button block in the gallery section |
 
 Keep gallery images around 1000&nbsp;px wide and saved as JPEG so the page stays fast.
